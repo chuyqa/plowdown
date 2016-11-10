@@ -1,0 +1,8 @@
+#/bin/sh
+
+# Sample download script for parallelized rapidgator downloads
+
+user=
+pas=
+
+plowdown --auth=${user}:${pas} --skip-final --run-after /opt/scripts/plowaria.sh $1

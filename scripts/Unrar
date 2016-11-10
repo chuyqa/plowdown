@@ -1,0 +1,4 @@
+#!/bin/bash
+filetounrar=$1
+
+/usr/bin/unrar x $filetounrar -x'*.url' -x'*.htm*' -x'*.txt' -x'*PREMIUM*' -x'*.URL'
