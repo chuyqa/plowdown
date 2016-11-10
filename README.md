@@ -7,18 +7,21 @@ This allows you to use mcrapet's plowshare tools in a small footprint linux cont
 
 
 
-####Build:
-```docker build -t chuyqa/plowdown .
+###Build:
+```
+    docker build -t chuyqa/plowdown .
 ```
 
-####Run:
-```docker run --name=plowmini -itd chuyqa/plowdown
+###Run:
+```
+    docker run --name=plowmini -itd chuyqa/plowdown
 ```
 
-####Running with Attached Remote Storage:
+###Running with Attached Remote Storage:
 Assuming host OS has mount point /mnt/disk1/Media
-docker run --name=plowme -itd -v /mnt/disk1/Media/:/Media chuyqa/plowme
-
+```
+    docker run --name=plowme -itd -v /mnt/disk1/Media/:/Media chuyqa/plowme
+```
 
 
 
