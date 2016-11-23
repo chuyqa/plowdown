@@ -2,7 +2,9 @@
 
 # Sample download script for parallelized rapidgator downloads
 
-user=
-pas=
 
-plowdown --auth=${user}:${pas} --skip-final --run-after /opt/scripts/plowaria.sh $1
+RG_USER=${RG_USER:-}
+RG_PASS=${RG_PASS:-}
+
+
+plowdown --auth=${RG_USER}:${RG_PASS} --skip-final --run-after /opt/scripts/plowaria.sh $1
