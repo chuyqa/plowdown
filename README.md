@@ -28,12 +28,16 @@ Assuming host OS has mount point /mnt/disk1/Media
 # Usage
 
 **Standard plowdown**
+
 1. Attach to container
+
 ```
     docker exec -it plowmini bash
 ```
 
+
 2. Choose download method:
+
 ```
     plowdown --auth=user:pass https://link_to_download
 ```
@@ -41,7 +45,8 @@ Assuming host OS has mount point /mnt/disk1/Media
 
     
     
-#### Usage: Multiple Download Connections (aria2c), Premium Rapidgator account, and host storage mounted**
+#### Example: Multiple Download Connections (aria2c), Premium Rapidgator account, and host storage mounted
+
 ```
     docker run --name=plowmini -itd \
     -e RG_USER='your_user' \
@@ -60,4 +65,5 @@ Assuming host OS has mount point /mnt/disk1/Media
     This only unrar's the media files, and will attempt to skip the most
     common HTML/referal link files in most downloads. 
     usage - 
-    `Unrar ./file_to_open.rar`
+    
+    Unrar ./file_to_open.rar
