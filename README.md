@@ -27,16 +27,16 @@ Assuming host OS has mount point /mnt/disk1/Media
 
 # Usage
 
-**Standard plowdown**
+### Example: Standard plowdown
 
-1. Attach to container
+Attach to container
 
 ```
     docker exec -it plowmini bash
 ```
 
 
-2. Choose download method:
+plowdown as usual
 
 ```
     plowdown --auth=user:pass https://link_to_download
@@ -45,7 +45,7 @@ Assuming host OS has mount point /mnt/disk1/Media
 
     
     
-#### Example: Multiple Download Connections (aria2c), Premium Rapidgator account, and host storage mounted
+### Example: Multiple Download Connections (aria2c), Premium Rapidgator account, and host storage mounted
 
 ```
     docker run --name=plowmini -itd \
