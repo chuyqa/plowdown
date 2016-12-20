@@ -26,5 +26,6 @@ RUN plowmod --install
 ADD ./scripts /opt/scripts
 RUN ln -s /opt/scripts/Unrar /usr/bin/Unrar
 RUN ln -s /opt/scripts/rg /usr/bin/rg
+RUN ln -s /opt/scripts/ul /usr/bin/ul
 
 CMD ["sh"]
