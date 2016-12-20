@@ -1,0 +1,10 @@
+#/bin/sh
+
+# Simple download script for parallelized uploaded.net downloads
+
+
+UL_USER=${UL_USER:-}
+UL_PASS=${UL_PASS:-}
+
+
+plowdown --auth=${UL_USER}:${UL_PASS} --skip-final --run-after /opt/scripts/plowaria.sh $1
