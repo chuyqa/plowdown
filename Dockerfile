@@ -5,6 +5,7 @@ MAINTAINER Jesus Alvarez <@chuyqa>
 # Install required packages
 RUN packages=' \
     bash \
+    sed \
     vim \
     git \
     tar \
